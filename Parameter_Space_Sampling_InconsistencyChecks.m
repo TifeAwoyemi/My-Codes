@@ -1,9 +1,9 @@
-function VRep_SPSA_Checks
+function Parameter_Space_Sampling_InconsistencyChecks
 
 close all,
-name = 'FineParametersAII';
+name = 'FineParametersDII';
 
-load('FineParametersReading', 'Presence', 'mspan', 'aspan', 'checks');
+load('FineParametersD', 'Presence', 'mspan', 'aspan', 'checks');
 
 checks = [0, 1, 2, 3, 4, 8, 16];
 
