@@ -16,7 +16,7 @@ close all,
 % 
 % for n = 1:N
 %    y0 = LH(n,:);
-%    v = hybrid_model_testing_SPSD(y0, m, a, name);
+%    v = Hybrid_Model_Analysis(y0, m, a, name);
 %    Vs(n) = v;
 % end
 % 
