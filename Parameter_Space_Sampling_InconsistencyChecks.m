@@ -6,6 +6,10 @@ name = 'FineParametersAII';
 load('FineParametersReading', 'Presence', 'mspan', 'aspan', 'checks');
 
 checks = [0, 1, 2, 3, 4, 8, 16];
+
+%%% This part of the code checks for birth-death parameter sets with a 
+%%% different value from its neigboring parameter pairs and saves this pairs.
+
 % for c = checks + 1
 %     Pold = Presence{c};
 %     Pnew = Pold(1:length(aspan), 1:length(mspan));
@@ -48,6 +52,9 @@ checks = [0, 1, 2, 3, 4, 8, 16];
     % save(['aindicesA', '-', num2str(pc), '.mat'], 'aindicesA')
     % aindicesA = {};
 % end
+
+%%% This part of the code re-runs all the saved parameter sets from the code snipet 
+%%% above for a much longer time to see if there is any change in the population behavior
 
 Presencenew = {Presence{1, 1}, Presence{1, 2}, Presence{1, 3}, ...
     Presence{1, 4}, Presence{1, 5}, Presence{1, 9}, Presence{1, 17}};
