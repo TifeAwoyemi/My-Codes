@@ -1,8 +1,5 @@
 ##################################
 ## Boluwatife Awoyemi
-## R as a Research Tool
-## Homework 13 (Project)
-## Due 05/01/23
 ###################################
 
 library(ggplot2)
@@ -164,7 +161,7 @@ world_fertility$month <- sapply(world_fertility$month, decimalToMonth)
 ## I will be making a line plot with x(year), y(value), and color(age_group).
 
 
-## I make a new data frame with a name sequence age specific fertility rate 
+## I made a new data frame with a name sequence age specific fertility rate 
 ## reported as recent births.
 ## I grouped by age_group and year, arranged the year in ascending order (not so
 ## necessary), subset these classes of data that are data type "Recent births",
@@ -185,7 +182,7 @@ axes <- list(
   scale_y_continuous("Average Births Per 1000 Women")
 )
 
-## I also define the plot styles I use for the two plots I have in this work.
+## I also defined the plot styles I use for the two plots I have in this work.
 ## With the theme() function, I made my plot title a centered (using hjust), bold
 ## and italicized red text and I also made my x and y axis labels bold.
 plot_style <- theme(plot.title = element_text(color = "red",
@@ -254,12 +251,3 @@ ggplot(lowest5_country_ASFR, aes(year, value, color = country)) + geom_line() +
 ## The other countries stop having reports sometime between 2015 and 2020.
 ## Altogether, the average rate of all these countries mostly declined with each 
 ## passing year.
-
-## Done!
-
-
-
-
-
-## Thank you for the class Dr. Schwilk, it was a really good class. 
-## I am glad I took it.
