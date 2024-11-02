@@ -68,7 +68,7 @@ for pc = 1:length(checks)
                     aindex  = aindicesA{1, mindex}(n);
                     a = aspan(aindex);
                     if isfile([name, '-', num2str(m), '-', num2str(a), '.mat']) == 0
-                        VRep = lhsdesign_tife_SPSA(m, a, name);
+                        VRep = Latin_Hypercube_Sampling_Setup(m, a, name);
                         for c = checks
                             if sum(c == VRep) > 0
                                 Presencenew{c + 1}(aindex, mindex) = 1;
