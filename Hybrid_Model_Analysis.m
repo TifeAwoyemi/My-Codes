@@ -1,4 +1,4 @@
-function v = hybrid_model_testing_SPSD(y0, m, a, name)
+function v = Hybrid_Model_Analysis(y0, m, a, name)
 % This code is non-linear Pachepsky (Continuous part)
 
 r = 20;
