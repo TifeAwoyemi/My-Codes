@@ -1,4 +1,4 @@
-function VRep = lhsdesign_tife_SPSD(m, a, name)
+function VRep = Latin_Hypercube_Sampling_Setup(m, a, name)
 close all,
 
 % R0min = 0.01;
