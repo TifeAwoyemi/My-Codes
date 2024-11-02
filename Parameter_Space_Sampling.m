@@ -1,4 +1,4 @@
-function VRep_SPSD
+function Parameter_Space_Sampling
 
 close all,
 
