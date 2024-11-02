@@ -18,7 +18,7 @@ for mc  = 1:length(mspan)
     m = mspan(mc);
     for ac  = 1:length(aspan)
         a = aspan(ac);
-        VRep = lhsdesign_tife_SPSD(m, a, name);
+        VRep = Parameter_Space_Sampling(m, a, name);
         for c = checks
             if sum(c == VRep) > 0
                 Presence{c + 1}(ac, mc) = 1;
